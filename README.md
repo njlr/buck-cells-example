@@ -9,7 +9,7 @@ For this example, we are using [LoopPerfect/neither](https://github.com/LoopPerf
 First grab the submodules using:
 
 ```bash=
-git submodule update --recursive --remote
+git submodule update --init --recursive
 ```
 
 Next, build the example with [Buck](https://www.buckbuild.com):
