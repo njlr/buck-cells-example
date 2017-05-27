@@ -18,7 +18,18 @@ Next, build the example with [Buck](https://www.buckbuild.com):
 buck run :example
 ```
 
-## Notes
+## What Problem Does Cells Solve? 
+
+Cells are a great fit for this situtation: 
+
+ - You have a library in a repo that builds with Buck
+ - You want to use that library in your project
+ - You you copy the library into your project but the library's `BUCK` files don't work, because the root (`//`) has changed to the root of your project
+ - You don't want to rewrite your library's `BUCK` files
+
+Cells allow us to create isolated sub-projects that have their own `.buckconfig` and their own Buck target heirarchy. Cells can use targets from other cells when those targets are exported. 
+
+## How Does it Work?
 
 The meat of the example is in `.buckconfig`:
 
