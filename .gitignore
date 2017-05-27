@@ -30,3 +30,8 @@
 *.exe
 *.out
 *.app
+
+# Buck
+/buck-out/
+/.buckd/
+.buckconfig.local

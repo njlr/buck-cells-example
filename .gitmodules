@@ -1,0 +1,3 @@
+[submodule "vendor/neither"]
+	path = vendor/neither
+	url = git@github.com:LoopPerfect/neither.git
