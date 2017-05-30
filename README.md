@@ -38,7 +38,7 @@ The meat of the example is in `.buckconfig`:
   neither = vendor/neither
 ```
 
-The `repositories` tag tells Buck where each cell lives in your project's folder structure. Each cell has an alias. Here we have `neither = vendor/neither`, which means `vendor/neither` has the cell-name `neither`.
+The `repositories` tag tells Buck where each cell lives in your project's folder structure. Each cell has an alias. Here we have `neither = vendor/neither`, which means the subfolder `vendor/neither` is a cell with the name `neither`.
 
 We can refer to targets inside of a cell using this syntax: `cell-name//:target-in-cell`.
 
